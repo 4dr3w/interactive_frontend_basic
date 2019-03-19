@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -13,6 +14,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -33,6 +35,40 @@
             </div>
         </fieldset>
     </form>
+
+    <div id="map"></div>
+</div>
+
+<div class="modal" id="locations-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <!--<div class="modal-header">-->
+            <!--<h5 class="modal-title">Modal title</h5>-->
+            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+            <!--<span aria-hidden="true">&times;</span>-->
+            <!--</button>-->
+            <!--</div>-->
+            <div class="modal-body" id="modal-body-container">
+                <table class="table table-striped" id="places-tbl">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Open?</th>
+                        <th>Type</th>
+                        <th>Rating</th>
+                    </tr>
+                    </thead>
+                    <tbody id="modal-table-body">
+                    </tbody>
+                </table>
+            </div>
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        </div>
+    </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
